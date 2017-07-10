@@ -13,6 +13,6 @@ namespace BDDGen.Web.Controllers
             return View();
         }
 
-       
+
     }
 }
