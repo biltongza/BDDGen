@@ -1,0 +1,5 @@
+﻿<div class="input-group" ng-repeat="part in $ctrl.behaviour.parts">
+
+    <label class="input-group-addon">{{ part === $ctrl.behaviour[0] ? $ctrl.behaviour.type : 'And' }}</label>
+    <input type="text" class="form-control" ng-model="part.value" ng-attr-id="part." />
+</div>
