@@ -260,5 +260,9 @@ paket-files/
 __pycache__/
 *.pyc
 
-#js libs
+# js libs
 /**/wwwroot/lib/
+
+# minified files
+*.min.js
+*.min.css
