@@ -12,7 +12,8 @@
     "angular-ui-router": "1.0.5",
     "angular-resource": "1.6.5",
     "angular-touch": "1.6.5",
-    "angular-xeditable": "0.8.0"
+    "angular-xeditable": "0.8.0",
+    "es5-shim": "4.5.9"
   },
   "resolutions": {
     "angular": ">= 1.2.0"
