@@ -9,8 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="wwwroot\js\app\app.config.js" />
-    <Content Include="wwwroot\js\app\app.js" />
+    <Content Remove="wwwroot/js\site.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\app\api\api.module.js" />
+    <Content Include="wwwroot\app\api\api.service.js" />
+    <Content Include="wwwroot\app\app.config.js" />
+    <Content Include="wwwroot\app\app.js" />
+    <Content Include="wwwroot\app\app.run.js" />
+    <Content Include="wwwroot\app\bddGenerator\bddGenerator.component.js" />
+    <Content Include="wwwroot\app\bddGenerator\bddGenerator.template.html" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="2.4.337" />

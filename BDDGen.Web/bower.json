@@ -9,7 +9,10 @@
     "angular": "v1.6.5",
     "angular-route": "v1.6.5",
     "angular-animate": "1.6.5",
-    "angular-ui-router": "1.0.5"
+    "angular-ui-router": "1.0.5",
+    "angular-resource": "1.6.5",
+    "angular-touch": "1.6.5",
+    "angular-xeditable": "0.8.0"
   },
   "resolutions": {
     "angular": ">= 1.2.0"
