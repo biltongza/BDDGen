@@ -1,6 +1,7 @@
 ﻿(function () {
+  "use strict";
   angular.module('bddgen')
-    .run(xeditableOptions);
+    .run(['editableOptions',xeditableOptions]);
 
   function xeditableOptions(editableOptions) {
     editableOptions.theme = 'bs3'
