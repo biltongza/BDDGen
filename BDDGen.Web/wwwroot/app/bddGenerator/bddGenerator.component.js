@@ -12,9 +12,20 @@
     vm.scenarios = [
       {
         name: 'Scenario 1',
-        given: '',
-        when: '',
-        then: ''
+        behaviours: [
+          {
+            type: 'Given',
+            parts: ['']
+          },
+          {
+            type: 'When',
+            parts: ['']
+          },
+          {
+            type: 'Then',
+            parts: ['']
+          }
+        ]
       }
     ];
 

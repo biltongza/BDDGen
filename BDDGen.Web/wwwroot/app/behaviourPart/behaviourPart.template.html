@@ -1,5 +1,25 @@
-﻿<div class="input-group" ng-repeat="part in $ctrl.behaviour.parts">
+﻿<div class="form-group container-fluid">
+    <div ng-repeat="part in $ctrl.behaviour.parts track by $index" class="row row-margin-bottom">
+        <div class="col-md-12">
+            <div class="row">
+                <div ng-if="$index !== 0" class="col-md-1"></div>
+                <div ng-class="{'col-md-11': $index > 0, 'col-md-12': $index === 0}">
+                    <div class="input-group">
+                        <label class="input-group-addon" ng-attr-for="{{$ctrl.behaviour.type + $index}}">{{ $index === 0 ? $ctrl.behaviour.type : 'And' }}</label>
+                        <input type="text" class="form-control" ng-model="part" ng-attr-id="{{$ctrl.behaviour.type + $index}}" />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn" ng-click="$ctrl.removePart($index)" ng-class="{'btn-danger': $ctrl.behaviour.parts.length > 1, 'btn-default': $ctrl.behaviour.parts.length <= 1}" ng-disabled="$ctrl.behaviour.parts.length <= 1"><span class="glyphicon glyphicon-remove-sign"></span></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <label class="input-group-addon">{{ part === $ctrl.behaviour[0] ? $ctrl.behaviour.type : 'And' }}</label>
-    <input type="text" class="form-control" ng-model="part.value" ng-attr-id="part." />
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+            <button type="button" class="btn btn-success" ng-click="$ctrl.newPart()"><span class="glyphicon glyphicon-plus"></span>Add</button>
+        </div>
+    </div>
+
 </div>

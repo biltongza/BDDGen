@@ -1,30 +1,16 @@
 ﻿<div class="panel panel-default">
     <div class="panel-heading">
         Scenarios
-        <div class="">
-            <button class="btn btn-primary" ng-click="$ctrl.add()">Add</button>
-        </div>
+        <button class="btn btn-primary" ng-click="$ctrl.add()">Add</button>
     </div>
     <div class="panel-body">
-
         <div ng-repeat="scenario in $ctrl.scenarios" class="panel panel-default">
             <div class="panel-heading">
-                {{scenario.name}}
+                <span editable-text="scenario.name">{{scenario.name || "Unnamed Scenario"}}</span>
             </div>
             <div class="panel-body">
-                <div class="form-group">
-                    <div class="input-group">
-                        <span class="input-group-addon">Given</span>
-                        <input type="text" class="form-control" ng-model="scenario.given" />
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon">When</span>
-                        <input type="text" class="form-control" ng-model="scenario.when" />
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon">Then</span>
-                        <input type="text" class="form-control" ng-model="scenario.then" />
-                    </div>
+                <div ng-repeat="behaviour in scenario.behaviours" class="form-group">
+                    <behaviour-part behaviour="behaviour"></behaviour-part>
                 </div>
 
             </div>
