@@ -1,4 +1,9 @@
-﻿
+﻿html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 @-moz-document url-prefix() {
     fieldset {
@@ -9,4 +14,9 @@
 
 .row-margin-bottom {
     margin-bottom: 5px;
+}
+
+.viewport-scrollable {
+    max-height: 80vh;
+    overflow-y: scroll;
 }
