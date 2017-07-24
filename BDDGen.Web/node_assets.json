@@ -1,0 +1,28 @@
+{
+  "js": [
+    "node_modules/es5-shim/es5-shim.js",
+    "node_modules/jquery/dist/jquery.js",
+    "node_modules/bootstrap/dist/js/bootstrap.js",
+    "node_modules/angular/angular.js",
+    "node_modules/angular-animate/angular-animate.js",
+    "node_modules/angular-touch/angular-touch.js",
+    "node_modules/angular-resource/angular-resource.js",
+    "node_modules/angular-route/angular-route.js",
+    "node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js",
+    "node_modules/angular-xeditable/dist/js/xeditable.js",
+    "node_modules/@uirouter/angularjs/release/angular-ui-router.js"
+  ],
+  "fonts": [
+    "node_modules/bootstrap/dist/fonts/*.eot",
+    "node_modules/bootstrap/dist/fonts/*.svg",
+    "node_modules/bootstrap/dist/fonts/*.ttf",
+    "node_modules/bootstrap/dist/fonts/*.woff",
+    "node_modules/bootstrap/dist/fonts/*.woff2"
+  ],
+  "css": [
+    "node_modules/bootstrap/dist/css/bootstrap.css",
+    "node_modules/bootstrap/dist/css/bootstrap.css.map",
+    "node_modules/angular-xeditable/dist/css/xeditable.css",
+    "node_modules/angular-xeditable/dist/css/xeditable.css.map"
+  ]
+}

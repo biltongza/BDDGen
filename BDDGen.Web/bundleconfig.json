@@ -1,13 +1,12 @@
 ﻿[
   {
-    "outputFileName": "wwwroot/css/site.min.css",
+    "outputFileName": "wwwroot/dist/site.min.css",
     "inputFiles": [
-      "wwwroot/css/site.css"
+      "Assets/css/site.css"
     ]
   },
-
   {
-    "outputFileName": "wwwroot/app/site.min.js",
+    "outputFileName": "wwwroot/dist/site.min.js",
     "inputFiles": [
       "wwwroot/app/app.js",
       "wwwroot/app/app.config.js",
@@ -16,7 +15,6 @@
       "wwwroot/app/api/api.service.js",
       "wwwroot/app/behaviourPart/behaviourPart.component.js",
       "wwwroot/app/bddGenerator/bddGenerator.component.js"
-
     ]
   }
 ]

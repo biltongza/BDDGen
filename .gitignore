@@ -266,3 +266,5 @@ __pycache__/
 # minified files
 *.min.js
 *.min.css
+/BDDGen.Web/wwwroot/dist
+/BDDGen.Web/wwwroot/fonts

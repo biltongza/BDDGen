@@ -7,7 +7,7 @@
     });
 
   function BddGeneratorController(BddGenAPI, $location, $anchorScroll) {
-    const vm = this;
+    var vm = this;
     vm.addScenario = addScenario;
     vm.removeScenario = removeScenario;
     vm.copyScenario = copyScenario;
@@ -48,7 +48,7 @@
     }
 
     function copyScenario(index) {
-      let scenario = vm.scenarios[index];
+      var scenario = vm.scenarios[index];
       vm.scenarios.push(JSON.parse(JSON.stringify(scenario)));
       scrollToLatest();
     }

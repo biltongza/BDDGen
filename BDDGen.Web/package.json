@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@uirouter/angularjs": "1.0.5",
+    "angular": "v1.6.5",
+    "angular-animate": "1.6.5",
+    "angular-resource": "1.6.5",
+    "angular-route": "v1.6.5",
+    "angular-touch": "1.6.5",
+    "angular-ui-bootstrap": "^2.5.0",
+    "angular-xeditable": "0.8.0",
+    "bootstrap": "3.3.7",
+    "es5-shim": "4.5.9",
+    "jquery": "2.2.0"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-uglify": "^3.0.0",
+    "merge-stream": "^1.0.1"
+  }
+}

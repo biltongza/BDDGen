@@ -13,6 +13,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\css\site.css" />
+    <Content Include="Assets\favicon.ico" />
+    <Content Include="Assets\images\banner1.svg" />
+    <Content Include="Assets\images\banner2.svg" />
+    <Content Include="Assets\images\banner3.svg" />
+    <Content Include="Assets\images\banner4.svg" />
     <Content Include="wwwroot\app\api\api.module.js" />
     <Content Include="wwwroot\app\api\api.service.js" />
     <Content Include="wwwroot\app\app.config.js" />
@@ -24,7 +30,6 @@
     <Content Include="wwwroot\app\behaviourPart\behaviourPart.template.html" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="BuildBundlerMinifier" Version="2.4.337" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
@@ -41,9 +46,22 @@
   <ItemGroup>
     <None Include="..\.gitattributes" Link=".gitattributes" />
     <None Include="..\.gitignore" Link=".gitignore" />
+    <None Include="wwwroot\app\api\api.module.js" />
+    <None Include="wwwroot\app\api\api.service.js" />
+    <None Include="wwwroot\app\app.config.js" />
+    <None Include="wwwroot\app\app.js" />
+    <None Include="wwwroot\app\app.run.js" />
+    <None Include="wwwroot\app\bddGenerator\bddGenerator.component.js" />
+    <None Include="wwwroot\app\bddGenerator\bddGenerator.template.html" />
+    <None Include="wwwroot\app\behaviourPart\behaviourPart.component.js" />
+    <None Include="wwwroot\app\behaviourPart\behaviourPart.template.html" />
+    <None Include="wwwroot\css\site.css" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BDDGen.API\BDDGen.API.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\" />
   </ItemGroup>
 
 </Project>

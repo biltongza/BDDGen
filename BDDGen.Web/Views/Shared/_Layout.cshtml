@@ -7,19 +7,19 @@
     <title>BDDGen.Web</title>
 
     <environment names="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/lib/angular-xeditable/dist/css/xeditable.css" />
+        <link rel="stylesheet" href="~/dist/bootstrap.css" />
+        <link rel="stylesheet" href="~/dist/xeditable.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment names="Staging,Production">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-href="~/dist/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-xeditable/0.8.0/css/xeditable.min.css"
-              asp-fallback-href="~/lib/angular-xeditable/dist/css/xeditable.min.css"
+              asp-fallback-href="~/dist/xeditable.min.css"
               asp-fallback-test-class=".editable-text" asp-fallback-test-property="white-space" asp-fallback-test-value="nowrap"
               crossorigin="anonymous" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/dist/site.min.css" asp-append-version="true" />
     </environment>
     @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
@@ -47,17 +47,17 @@
     </div>
 
     <environment names="Development">
-        <script src="~/lib/es5-shim/es5-shim.js"></script>
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/lib/angular/angular.js"></script>
-        <script src="~/lib/angular-animate/angular-animate.js"></script>
-        <script src="~/lib/angular-touch/angular-touch.js"></script>
-        <script src="~/lib/angular-resource/angular-resource.js"></script>
-        <script src="~/lib/angular-route/angular-route.js"></script>
-        <script src="~/lib/angular-ui-router/release/ui-router-angularjs.js"></script>
-        <script src="~/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-        <script src="~/lib/angular-xeditable/dist/js/xeditable.js"></script>
+        <script src="~/dist/es5-shim.js"></script>
+        <script src="~/dist/jquery.js"></script>
+        <script src="~/dist/bootstrap.js"></script>
+        <script src="~/dist/angular.js"></script>
+        <script src="~/dist/angular-animate.js"></script>
+        <script src="~/dist/angular-touch.js"></script>
+        <script src="~/dist/angular-resource.js"></script>
+        <script src="~/dist/angular-route.js"></script>
+        <script src="~/dist/ui-bootstrap-tpls.js"></script>
+        <script src="~/dist/angular-ui-router.js"></script>
+        <script src="~/dist/xeditable.js"></script>
         <script src="~/app/app.js" asp-append-version="true"></script>
         <script src="~/app/app.config.js" asp-append-version="true"></script>
         <script src="~/app/app.run.js" asp-append-version="true"></script>
@@ -68,73 +68,72 @@
     </environment>
     <environment names="Staging,Production">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js"
-                asp-fallback-src="~/lib/es5-shim/es5-shim.min.js"
+                asp-fallback-src="~/dist/es5-shim/es5-shim.min.js"
                 asp-fallback-test="String.prototype.trim"
                 crossorigin="anonymous"
                 integrity="sha384-a3YBYay0H8GoZiGBLXAhPS9QXJrDy8BgrAE9MDudcVn/UyxSK30xxZoqbYjRsf8o">
         </script>
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-src="~/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery"
                 crossorigin="anonymous"
                 integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
         </script>
         <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-src="~/dist/bootstrap.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
                 crossorigin="anonymous"
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"
-                asp-fallback-src="~/lib/angular/angular.min.js"
+                asp-fallback-src="~/dist/angular.min.js"
                 asp-fallback-test="window.angular"
                 crossorigin="anonymous"
                 integrity="sha384-hOYZLmROZQbcYRe8tUP/9bcPGwwDxXf81Rnld8ETuGcGM45lysORQcHwyEFlYlaO">
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.min.js"
-                asp-fallback-src="~/lib/angular-animate/angular-animate.min.js"
+                asp-fallback-src="~/dist/angular-animate.min.js"
                 asp-fallback-test="(function(){try{window.angular.module('ngAnimate')}catch(e){return false;}return true;})()"
                 crossorigin="anonymous"
                 integrity="sha384-pWY/EYFpAh4d7z7Gtvjov1hLj6m4W1Z1IaqAvmpB5Z8xuoqSpXt6Ftm/KJYTKJbA">
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-touch.min.js"
-                asp-fallback-src="~/lib/angular-touch/angular-touch.min.js"
+                asp-fallback-src="~/dist/angular-touch.min.js"
                 asp-fallback-test="(function(){try{window.angular.module('ngTouch')}catch(e){return false;}return true;})()"
                 crossorigin="anonymous"
                 integrity="sha384-WT4OL/NSA6T02/EoJ1iN4Jp0xpxnmdeUN+Jx/72dWGh4jCzWEIEG1qTXAqv3grTp">
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-resource.min.js"
-                asp-fallback-src="~/lib/angular-resource/angular-resource.min.js"
+                asp-fallback-src="~/dist/angular-resource.min.js"
                 asp-fallback-test="(function(){try{window.angular.module('ngResource')}catch(e){return false;}return true;})()"
                 crossorigin="anonymous"
                 integrity="sha384-axmTLeioK6PW9toB/JLOlgp1cFls82CuxxXQSHQAwz55RqR51OIuMwAhaoeedH/h">
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"
-                asp-fallback-src="~/lib/angular-route/angular-route.min.js"
+                asp-fallback-src="~/dist/angular-route.min.js"
                 asp-fallback-test="(function(){try{window.angular.module('ngRoute')}catch(e){return false;}return true;})()"
                 crossorigin="anonymous"
                 integrity="sha384-W3m3W4hI4YtZnxvmc9GtTeIhlUuL8o3YArFbMB1RM2dyq01PaL1dwEM/q4q/TJZB">
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"
-                asp-fallback-src="~/lib/angular-ui-router/release/ui-router-angularjs.js"
-                asp-fallback-test="(function(){try{window.angular.module('ui.router')}catch(e){return false;}return true;})()"
-                crossorigin="anonymous"
-                integrity="sha384-GZF/RUDhWW+Ql/E8DU/Sg5EMBEnaN0vigMHVTY4GZNLqc6OrmxNnttTM2dWZ4kRe">
-        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"
-                asp-fallback-src="~/lib/angular-bootstrap/ui-bootstrap-tpls.js"
+                asp-fallback-src="~/dist/ui-bootstrap-tpls.js"
                 asp-fallback-test="(function(){try{window.angular.module('ui.bootstrap')}catch(e){return false;}return true;})()"
                 crossorigin="anonymous"
                 integrity="sha384-nijripvvJaj00xjRW/uCHifFw+Ajgjp0uANZHEvOW+OlJfyY2fgMIQY836w6qTio">
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-xeditable/0.8.0/js/xeditable.min.js"
-                asp-fallback-src="~/lib/angular-xeditable/dist/js/xeditable.min.js"
+                asp-fallback-src="~/dist/xeditable.min.js"
                 asp-fallback-test="(function(){try{window.angular.module('xeditable')}catch(e){return false;}return true;})()"
                 crossorigin="anonymous"
                 integrity="sha384-21BOrSMx7KJEVxBAB67Z/gJpS4RoZHIiMwXEYLS/Dr9SRjmG6LZ+8AchQ93JR1ir">
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"
+                asp-fallback-src="~/dist/angular-ui-router.js"
+                asp-fallback-test="(function(){try{window.angular.module('ui.router')}catch(e){return false;}return true;})()"
+                crossorigin="anonymous">
+        </script>
 
-        <script src="~/app/site.min.js" asp-append-version="true"></script>
+        <script src="~/dist/site.min.js" asp-append-version="true"></script>
 
     </environment>
 

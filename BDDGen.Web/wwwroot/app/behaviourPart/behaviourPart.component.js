@@ -10,7 +10,7 @@
     });
 
   function BehaviourPartController() {
-    const vm = this;
+    var vm = this;
 
     vm.newPart = newPart;
     vm.removePart = removePart;
