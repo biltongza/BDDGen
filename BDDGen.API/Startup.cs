@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using BDDGen.API.Services;
 
 namespace BDDGen.API
 {
@@ -30,6 +31,8 @@ namespace BDDGen.API
             // Add framework services.
             services.AddMvc();
             services.AddLogging();
+            services.Configure<ExporterOptions>(Configuration);
+            services.AddSingleton<ICompositionService, CompositionService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

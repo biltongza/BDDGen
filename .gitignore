@@ -268,3 +268,4 @@ __pycache__/
 *.min.css
 /BDDGen.Web/wwwroot/dist
 /BDDGen.Web/wwwroot/fonts
+/BDDGen.API/Exporters

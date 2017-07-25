@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDDGen.API", "BDDGen.API\BDDGen.API.csproj", "{EA30A29E-F43F-4D1F-BF01-F36C24715F56}"
 EndProject
@@ -13,6 +13,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exporters", "Exporters", "{348A1911-AB77-4889-86D2-6CCB298E6D86}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelExporter", "Exporters\ExcelExporter\ExcelExporter.csproj", "{2FB30F16-D5AD-411B-B66F-13FAC63B116F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDDGen.Types", "BDDGen.Types\BDDGen.Types.csproj", "{D16CC041-B3A2-47C7-881A-EBFD5A0D24F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONExporter", "Exporters\JSONExporter\JSONExporter.csproj", "{2102AB1D-42BF-4118-9F40-6E7EC75AE2E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,8 +36,24 @@ Global
 		{1C6F0351-6496-418B-A7C9-B0ABD9C54AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C6F0351-6496-418B-A7C9-B0ABD9C54AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C6F0351-6496-418B-A7C9-B0ABD9C54AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FB30F16-D5AD-411B-B66F-13FAC63B116F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FB30F16-D5AD-411B-B66F-13FAC63B116F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FB30F16-D5AD-411B-B66F-13FAC63B116F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FB30F16-D5AD-411B-B66F-13FAC63B116F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D16CC041-B3A2-47C7-881A-EBFD5A0D24F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16CC041-B3A2-47C7-881A-EBFD5A0D24F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16CC041-B3A2-47C7-881A-EBFD5A0D24F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16CC041-B3A2-47C7-881A-EBFD5A0D24F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2102AB1D-42BF-4118-9F40-6E7EC75AE2E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2102AB1D-42BF-4118-9F40-6E7EC75AE2E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2102AB1D-42BF-4118-9F40-6E7EC75AE2E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2102AB1D-42BF-4118-9F40-6E7EC75AE2E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2FB30F16-D5AD-411B-B66F-13FAC63B116F} = {348A1911-AB77-4889-86D2-6CCB298E6D86}
+		{2102AB1D-42BF-4118-9F40-6E7EC75AE2E4} = {348A1911-AB77-4889-86D2-6CCB298E6D86}
 	EndGlobalSection
 EndGlobal
