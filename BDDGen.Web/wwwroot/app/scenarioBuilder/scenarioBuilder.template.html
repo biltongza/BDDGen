@@ -1,0 +1,16 @@
+﻿<div class="panel-heading clearfix">
+
+    <h4 class="inline vertical-center" editable-text="$ctrl.scenario.Name">{{$ctrl.scenario.Name || "Unnamed Scenario"}}</h4>
+
+    <div class="btn-group vertical-center pull-right">
+        <button class="btn btn-default" ng-click="$ctrl.onScenarioCopied($ctrl.scenarioIndex)"><span class="glyphicon glyphicon-copy"></span>&nbsp;Copy</button>
+        <button class="btn btn-danger" ng-click="$ctrl.onScenarioDeleted($ctrl.scenarioIndex)"><span class="glyphicon glyphicon-remove"></span>&nbsp;Remove</button>
+    </div>
+
+
+</div>
+<div class="panel-body">
+    <div ng-repeat="behaviour in $ctrl.scenario.Behaviours">
+        <behaviour-part behaviour="behaviour"></behaviour-part>
+    </div>
+</div>

@@ -17,12 +17,13 @@
 
     function removePart(index) {
       if (index > -1) {
-        vm.behaviour.parts.splice(index, 1);
+        vm.behaviour.Parts.splice(index, 1);
       }
     }
 
     function newPart() {
-      vm.behaviour.parts.push('');
+      vm.behaviour.Parts.push('');
     }
+    
   }
 })();

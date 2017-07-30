@@ -1,0 +1,11 @@
+﻿
+<h3 class="inline vertical-center" editable-text="$ctrl.suite.Name">{{$ctrl.suite.Name || "Unnamed Test Suite"}}</h3>
+<div class="panel panel-default viewport-scrollable">
+    <div class="panel-heading clearfix">
+        <span ng-repeat="story in $ctrl.suite.Stories"><input type="button" class="btn btn-default" ng-click="$ctrl.activeStory = story" value="{{story.Name}}" /></span>
+
+    </div>
+
+    <story-view story="$ctrl.activeStory"></story-view>
+
+</div>

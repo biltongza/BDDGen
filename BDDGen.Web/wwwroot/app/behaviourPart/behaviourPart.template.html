@@ -1,13 +1,13 @@
 ﻿<div class="form-group container-fluid">
-    <div ng-repeat="part in $ctrl.behaviour.parts track by $index" class="row row-margin-bottom">
+    <div ng-repeat="part in $ctrl.behaviour.Parts track by $index" class="row row-margin-bottom">
         <div ng-if="$index !== 0" class="col-md-1"></div>
         <div ng-class="{'col-md-11': $index > 0, 'col-md-12': $index === 0}">
             <div class="input-group">
-                <label class="input-group-addon" ng-attr-for="{{$ctrl.behaviour.type + $index}}">{{ $index === 0 ? $ctrl.behaviour.type : 'And' }}</label>
-                <input type="text" class="form-control" ng-model="$ctrl.behaviour.parts[$index]" ng-attr-id="{{$ctrl.behaviour.type + $index}}" ng-attr-placeholder="{{$index === 0 ? $ctrl.behaviour.placeholder : ''}}" />
+                <label class="input-group-addon" ng-attr-for="{{$ctrl.behaviour.Type + $index}}">{{ $index === 0 ? $ctrl.behaviour.Type : 'And' }}</label>
+                <input Type="text" class="form-control" ng-model="$ctrl.behaviour.Parts[$index]" ng-attr-id="{{$ctrl.behaviour.Type + $index}}" ng-attr-placeholder="{{$index === 0 ? $ctrl.behaviour.Placeholder : ''}}" />
                 <span class="input-group-btn">
-                    <button ng-if="$index === $ctrl.behaviour.parts.length-1" type="button" class="btn btn-success" ng-click="$ctrl.newPart()"><span class="glyphicon glyphicon-plus"></span></button>
-                    <button type="button" class="btn" ng-click="$ctrl.removePart($index)" ng-class="{'btn-danger': $ctrl.behaviour.parts.length > 1, 'btn-default': $ctrl.behaviour.parts.length <= 1}" ng-disabled="$ctrl.behaviour.parts.length <= 1"><span class="glyphicon glyphicon-remove-sign"></span></button>
+                    <button ng-if="$index === $ctrl.behaviour.Parts.length-1" Type="button" class="btn btn-success" ng-click="$ctrl.newPart()"><span class="glyphicon glyphicon-plus"></span></button>
+                    <button Type="button" class="btn" ng-click="$ctrl.removePart($index)" ng-class="{'btn-danger': $ctrl.behaviour.Parts.length > 1, 'btn-default': $ctrl.behaviour.Parts.length <= 1}" ng-disabled="$ctrl.behaviour.Parts.length <= 1"><span class="glyphicon glyphicon-remove-sign"></span></button>
                 </span>
             </div>
         </div>

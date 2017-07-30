@@ -1,5 +1,5 @@
 ﻿(function () {
   "use strict";
 
-  angular.module("bddgen", ['bddgen.api', 'xeditable']);
+  angular.module("bddgen", ['ui.bootstrap', 'bddgen.api', 'xeditable']);
 })(); 

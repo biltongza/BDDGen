@@ -2,7 +2,7 @@
   {
     "outputFileName": "wwwroot/dist/site.min.css",
     "inputFiles": [
-      "Assets/css/site.css"
+      "wwwroot/css/site.css"
     ]
   },
   {
@@ -11,10 +11,15 @@
       "wwwroot/app/app.js",
       "wwwroot/app/app.config.js",
       "wwwroot/app/app.run.js",
+      "wwwroot/app/app.constants.js",
       "wwwroot/app/api/api.module.js",
-      "wwwroot/app/api/api.service.js",
+      "wwwroot/app/api/export.service.js",
+      "wwwroot/app/api/exporter.service.js",
       "wwwroot/app/behaviourPart/behaviourPart.component.js",
-      "wwwroot/app/bddGenerator/bddGenerator.component.js"
+      "wwwroot/app/bddGenerator/bddGenerator.component.js",
+      "wwwroot/app/storySelector/storySelector.component.js",
+      "wwwroot/app/scenarioList/scenarioList.component.js",
+      "wwwroot/app/scenarioBuilder/scenarioBuilder.component.js"
     ]
   }
 ]

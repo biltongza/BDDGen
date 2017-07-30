@@ -13,6 +13,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\app\api\export.service.js" />
+    <Content Include="wwwroot\app\api\exporters.service.js" />
+    <Content Include="wwwroot\app\app.constants.js" />
+    <Content Include="wwwroot\app\exportDialog\exportDialog.component.js" />
+    <Content Include="wwwroot\app\exportDialog\exportDialog.template.html" />
+    <Content Include="wwwroot\app\scenarioBuilder\scenarioBuilder.component.js" />
+    <Content Include="wwwroot\app\scenarioBuilder\scenarioBuilder.template.html" />
+    <Content Include="wwwroot\app\scenarioList\scenarioList.component.js" />
+    <Content Include="wwwroot\app\scenarioList\scenarioList.template.html" />
+    <Content Include="wwwroot\app\storySelector\storySelector.component.js" />
+    <Content Include="wwwroot\app\storySelector\storySelector.template.html" />
+    <Content Include="wwwroot\app\storyView\storyView.component.js" />
+    <Content Include="wwwroot\app\storyView\storyView.template.html" />
     <Content Include="wwwroot\css\site.css" />
     <Content Include="Assets\favicon.ico" />
     <Content Include="Assets\images\banner1.svg" />
@@ -20,7 +33,6 @@
     <Content Include="Assets\images\banner3.svg" />
     <Content Include="Assets\images\banner4.svg" />
     <Content Include="wwwroot\app\api\api.module.js" />
-    <Content Include="wwwroot\app\api\api.service.js" />
     <Content Include="wwwroot\app\app.config.js" />
     <Content Include="wwwroot\app\app.js" />
     <Content Include="wwwroot\app\app.run.js" />
@@ -47,7 +59,6 @@
     <None Include="..\.gitattributes" Link=".gitattributes" />
     <None Include="..\.gitignore" Link=".gitignore" />
     <None Include="wwwroot\app\api\api.module.js" />
-    <None Include="wwwroot\app\api\api.service.js" />
     <None Include="wwwroot\app\app.config.js" />
     <None Include="wwwroot\app\app.js" />
     <None Include="wwwroot\app\app.run.js" />

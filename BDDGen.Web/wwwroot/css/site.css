@@ -20,3 +20,22 @@
     max-height: 80vh;
     overflow-y: scroll;
 }
+
+.inline {
+    display: inline-block
+}
+
+.vertical-center {
+    vertical-align: middle;
+    float: none;
+}
+
+.autoscroll {
+    overflow: hidden;
+    margin: 3em;
+}
+
+    .autoscroll:hover {
+        overflow-y: auto;
+        /*padding-right: 1px;*/
+    }

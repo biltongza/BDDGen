@@ -1,0 +1,11 @@
+﻿<div class="clearfix">
+    <h4 class="inline vertical-center">Scenarios</h4>
+    <span class="btn-group pull-right">
+        <button class="btn btn-primary" ng-click="$ctrl.addScenario()"><span class="glyphicon glyphicon-plus"></span>&nbsp;Add</button>
+    </span>
+
+</div>
+
+<div ng-repeat="scenario in $ctrl.scenarios track by $index" class="panel panel-default" ng-attr-id="{{'Scenario' + $index}}">
+    <scenario-builder on-scenario-deleted="$ctrl.onScenarioDeleted" on-scenario-copied="$ctrl.onScenarioCopied" scenario="scenario" scenario-index="$index"></scenario-builder>
+</div>
