@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BDDGen.API.Services
+namespace BDDGen.API.Services.Contracts
 {
     public interface ICompositionService
     {

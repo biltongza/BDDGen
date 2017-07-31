@@ -20,7 +20,6 @@
   <ItemGroup>
     <None Include="..\.gitattributes" Link=".gitattributes" />
     <None Include="..\.gitignore" Link=".gitignore" />
-    <None Include="Services\ICompositionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BDDGen.Types\BDDGen.Types.csproj" />

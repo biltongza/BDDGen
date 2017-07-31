@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Composition;
 using System.Composition.Hosting;
 using Microsoft.Extensions.Options;
+using BDDGen.API.Services.Contracts;
 
 namespace BDDGen.API.Services
 {
