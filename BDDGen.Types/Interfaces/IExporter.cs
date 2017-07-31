@@ -12,6 +12,7 @@ namespace BDDGen.Types.Interfaces
     {
         string FriendlyName { get; }
         string ContentType { get; }
+        string Creator { get; }
         Stream Export(Suite suite);
     }
 }

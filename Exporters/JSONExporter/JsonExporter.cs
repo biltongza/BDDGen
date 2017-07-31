@@ -14,6 +14,8 @@ namespace JSONExporter
 
         public string ContentType { get { return "application/json"; } }
 
+        public string Creator { get { return "Logan Dam"; } }
+
         public Stream Export(Suite suite)
         {
             MemoryStream ms = new MemoryStream();

@@ -11,6 +11,7 @@ using BDDGen.Types.Interfaces;
 using BDDGen.API.Services;
 using BDDGen.API.Exceptions;
 using Microsoft.Net.Http.Headers;
+using BDDGen.API.Services.Contracts;
 
 namespace BDDGen.API.Controllers
 {

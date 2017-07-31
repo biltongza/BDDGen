@@ -1,10 +1,14 @@
 ﻿using BDDGen.API.Services;
+using BDDGen.API.Services.Contracts;
 using BDDGen.Types.Interfaces;
+using BDDGen.Types.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Composition;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,9 +25,19 @@ namespace BDDGen.API.Controllers
         }
 
         [HttpGet]
-        public List<string> GetExporters()
+        public List<ExporterDetail> GetExporters()
         {
-            return _exporters.Select(e => e.FriendlyName).ToList();
+            return _exporters.Select(e => 
+            {
+                var typeInfo = e.GetType().GetTypeInfo();
+                return new ExporterDetail
+                {
+                    FriendlyName = e.FriendlyName,
+                    FullyQualifiedName = typeInfo.FullName,
+                    Version = typeInfo.Assembly.GetName().Version.ToString(),
+                    Creator = e.Creator
+                };
+            }).ToList();
         }
     }
 }
