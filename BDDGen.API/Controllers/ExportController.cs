@@ -7,11 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Composition;
 using System.Composition.Hosting;
-using BDDGen.Types.Interfaces;
 using BDDGen.API.Services;
 using BDDGen.API.Exceptions;
 using Microsoft.Net.Http.Headers;
 using BDDGen.API.Services.Contracts;
+using BDDGen.Types.Contracts;
 
 namespace BDDGen.API.Controllers
 {
@@ -28,7 +28,7 @@ namespace BDDGen.API.Controllers
         [HttpPost]
         public FileStreamResult Export([FromBody] ExportRequest request)
         {
-            var exporter = _exporters.Where(r => r.FriendlyName.Equals(request.ExporterName)).FirstOrDefault();
+            var exporter = _exporters.Where(r => r.GetType().FullName.Equals(request.ExporterName)).FirstOrDefault();
             if (exporter == null)
             {
                 throw new ExporterNotFoundException(request.ExporterName);

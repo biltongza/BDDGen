@@ -1,6 +1,6 @@
 ﻿using System;
 using Newtonsoft.Json;
-using BDDGen.Types.Interfaces;
+using BDDGen.Types.Contracts;
 using BDDGen.Types.Models;
 using System.IO;
 using System.Composition;

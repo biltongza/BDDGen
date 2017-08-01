@@ -17,7 +17,7 @@ namespace BDDGen.API.Services
         public CompositionService(IOptions<ExporterOptions> optionsAccessor)
         {
             options = optionsAccessor.Value;
-            config = new ContainerConfiguration().WithAssembliesInPath(options.ExporterLocation);
+            config = new ContainerConfiguration().WithAssembliesInPath(options.PluginPath);
         }
         public IEnumerable<T> GetExports<T>(string contractName)
         {

@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using BDDGen.Types.Models;
 
-namespace BDDGen.Types.Interfaces
+namespace BDDGen.Types.Contracts
 {
     public interface IScenarioComponent
     {
-        ScenarioComponentType ComponentType { get; set; }
-        string Name { get; set; }
-        string Value { get; set; }
+        ScenarioComponentType ComponentType { get;}
+        string Name { get;}
+        string Value { get;}
     
     }
 }

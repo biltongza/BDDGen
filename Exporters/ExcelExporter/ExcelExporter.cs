@@ -1,4 +1,4 @@
-﻿using BDDGen.Types.Interfaces;
+﻿using BDDGen.Types.Contracts;
 using System;
 using System.IO;
 using System.Composition;

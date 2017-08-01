@@ -1,6 +1,6 @@
 ﻿using BDDGen.API.Services;
 using BDDGen.API.Services.Contracts;
-using BDDGen.Types.Interfaces;
+using BDDGen.Types.Contracts;
 using BDDGen.Types.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;

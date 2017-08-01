@@ -21,7 +21,7 @@ namespace BDDGen.API.Services
 
         public static ContainerConfiguration WithAssembliesInPath(this ContainerConfiguration configuration, string path, AttributedModelProvider conventions, SearchOption searchOption = SearchOption.TopDirectoryOnly)
         {
-            var dlls = Directory.GetFiles(path, "*.Exporter.dll");
+            var dlls = Directory.GetFiles(path, "*.dll");
             List<Assembly> assemblies = new List<Assembly>(dlls.Length);
             foreach (var dll in dlls)
             {

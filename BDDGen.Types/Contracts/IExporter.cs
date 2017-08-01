@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BDDGen.Types.Interfaces
+namespace BDDGen.Types.Contracts
 {
     public interface IExporter
     {

@@ -9,6 +9,6 @@ namespace BDDGen.API.Services
 {
     public class ExporterOptions
     {
-        public string ExporterLocation { get; set; }
+        public string PluginPath { get; set; }
     }
 }
